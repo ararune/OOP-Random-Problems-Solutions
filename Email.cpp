@@ -7,7 +7,7 @@ using std::cout;
 using std::endl;
 using std::regex;
 
-// 2 variants to solve email format validity
+// 2 variants to solve email format validity, regex variant works better, the other variant does not cover consecutive dots case
 
 bool isEmailRegex(const string& email)
 {
