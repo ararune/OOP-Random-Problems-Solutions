@@ -9,6 +9,7 @@ using std::regex;
 
 // 2 variants to solve email format validity, regex variant works better, the other variant does not cover consecutive dots case
 
+// + {matches 1 or more times}, * {matches 0 or more times}, \w {whitespace}, | OR operator
 bool isEmailRegex(const string& email)
 {
     const regex pattern
