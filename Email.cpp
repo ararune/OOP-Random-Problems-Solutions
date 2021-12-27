@@ -25,6 +25,7 @@ bool isEmail(string& email)
     {
         return false;
     }
+    // 48-57 {0-9}, 65-122{A-z}
     auto nit = find_if(begin(email), it, [](char elem) {return elem >= 48 && elem <= 57 || elem >= 65 && elem <= 122; });
     auto dot = find_if(it + 1, end(email), [](char elem) {return elem == '.'; });
     auto nnnit = find_if(it + 1, end(email), [](char elem) {return elem >= 48 && elem <= 122; });
