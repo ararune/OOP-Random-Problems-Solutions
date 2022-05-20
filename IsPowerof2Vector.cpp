@@ -2,7 +2,7 @@
 #include <vector>
 
 
-// transform a vector by dividing even numbers by 2, multiply odd numbers by 3 and add 1, until all the elements are power of 2 
+// transform a vector until all the elements are power of 2 
 
 bool isPower(int n)
 {
